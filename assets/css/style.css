@@ -25,7 +25,7 @@ header {
   background-image: url('../images/player.jpg');
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  padding-inline: 2.5rem;
+  padding-inline: 4rem;
   max-width: 40vw;
   min-height: 100vh;
 }
@@ -44,6 +44,10 @@ h1 {
 .logo,
 .header-main {
   display: flex;
+}
+
+.header-main {
+  justify-content: space-between;
 }
 
 .logo {
@@ -163,4 +167,15 @@ button.btn:hover {
 
 .invalid:focus {
   border: 3px solid red;
+}
+
+footer {
+  position: absolute;
+  color: #fff;
+  bottom: 0;
+  left: 10%;
+}
+
+footer p {
+  font-family: var(--logo-font-family);
 }
