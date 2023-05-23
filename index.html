@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PLAY NOW</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Koulen&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="header-main">
+    <header>
+        <div class="logo">
+            <svg width="70px"viewBox="-0.5 0 7 7" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        
+              <title>play [#1003]</title>
+              <desc>Created with Sketch.</desc>
+              <defs>
+          
+          </defs>
+              <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                  <g id="Dribbble-Light-Preview" transform="translate(-347.000000, -3766.000000)" fill="#8400ff">
+                      <g id="icons" transform="translate(56.000000, 160.000000)">
+                          <path d="M296.494737,3608.57322 L292.500752,3606.14219 C291.83208,3605.73542 291,3606.25002 291,3607.06891 L291,3611.93095 C291,3612.7509 291.83208,3613.26444 292.500752,3612.85767 L296.494737,3610.42771 C297.168421,3610.01774 297.168421,3608.98319 296.494737,3608.57322" id="play-[#1003]">
+          
+          </path>
+                      </g>
+                  </g>
+              </g>
+          </svg>
+          <svg width="70px"viewBox="-0.5 0 7 7" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          
+            <title>play [#1003]</title>
+            <desc>Created with Sketch.</desc>
+            <defs>
+        
+        </defs>
+            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <g id="Dribbble-Light-Preview" transform="translate(-347.000000, -3766.000000)" fill="#4400ff">
+                    <g id="icons" transform="translate(56.000000, 160.000000)">
+                        <path d="M296.494737,3608.57322 L292.500752,3606.14219 C291.83208,3605.73542 291,3606.25002 291,3607.06891 L291,3611.93095 C291,3612.7509 291.83208,3613.26444 292.500752,3612.85767 L296.494737,3610.42771 C297.168421,3610.01774 297.168421,3608.98319 296.494737,3608.57322" id="play-[#1003]">
+        
+        </path>
+                    </g>
+                </g>
+            </g>
+        </svg>
+          <h1>
+            PLAYNOW
+          </h1>
+        </div>
+    </header>
+    <main>
+      <p class="info">Play new games every day anywhere you want! With games added all the time, there’s always something new to play.</p>
+      <form method="POST" onsubmit="checkInputs(event)"> 
+        <h2>Let's do this!</h2>
+        <div class="column-form">
+          <div>
+            <fieldset>
+              <label for="firstName">FIRST NAME</label>
+              <input type="text" name="first-name" id="firstName" placeholder="Ex: Nataly" minlength="3" value="">
+              <div class="error"></div>
+            </fieldset> 
+            <fieldset>
+              <label for="">EMAIL</label>
+              <input type="email" name="email" id="email" placeholder="Ex: test@test.com" minlength="10" value="">
+              <div class="error"></div>
+            </fieldset>
+            <fieldset>
+              <label for="password">PASSWORD</label>
+              <input type="password" name="password" id="password" placeholder="Ex: Jujuba" value="">
+              <div class="error"></div>
+            </fieldset>
+          </div>
+          <div>
+            <fieldset>
+              <label for="lastName">LAST NAME</label>
+              <input type="text" name="last-name" id="lastName" placeholder="Ex: Carnevalli" minlength="3" value="">
+              <div class="error"></div>
+            </fieldset> 
+            <fieldset>
+              <label for="phone">PHONE NUMBER</label>
+              <input type="number" name="phone" id="phone" placeholder="Ex: 55999283555"  value=""> 
+              <div class="error"></div>
+            </fieldset>
+            <fieldset>
+              <label for="confirmPassword">CONFIRM PASSWORD</label>
+              <input type="password" name="confirm-password" id="confirmPassword" placeholder="Ex: Jujuba" value="">
+              <div class="error"></div>
+            </fieldset>
+          </div>
+        </div>
+        <button type="submit" class="btn">Create Account</button>
+      <p class="login">Already have an account? <a href="#">Log in</a>.</p>
+      </form>
+    </main>
+    <script src="./assets/js/script.js"></script>
+  </div>
+</body>
+</html>
