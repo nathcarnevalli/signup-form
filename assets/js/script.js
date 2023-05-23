@@ -1,5 +1,5 @@
 confirmPassword.addEventListener('change', e => {
-  if (e.target.value !== password.value) {
+  if (e.target.value !== password.value || e.target.value.length < 8) {
     e.target.nextElementSibling.textContent = '*Password did not match'
     e.target.classList = 'invalid'
   } else {
@@ -26,7 +26,7 @@ email.addEventListener('change', e => {
 password.addEventListener('change', e => {
   const regexPassword = /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{6,16}$/
 
-  if (e.target.value.search(regexPassword)) {
+  if (e.target.value.search(regexPassword) || e.target.value.length < 8) {
     e.target.nextElementSibling.textContent = '*Please provide a valid Password'
     e.target.classList = 'invalid'
   } else {
