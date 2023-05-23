@@ -1,0 +1,166 @@
+:root {
+  --primary-color: #8400ff;
+  --primary-second-color: #a23fff;
+  --second-color: #fff;
+  --third-color: #4400ff;
+  --third-second-color: #662eff;
+  --normal-font-family: 'Roboto', sans-serif;
+  --normal-border-radius: 5px;
+  --logo-font-family: 'Koulen', cursive;
+  --hover-cursor: pointer;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--normal-font-family);
+}
+
+body {
+  background-color: var(--primary-color);
+}
+
+header {
+  background-image: url('../images/player.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  padding-inline: 2.5rem;
+  max-width: 40vw;
+  min-height: 100vh;
+}
+
+main,
+footer {
+  max-width: 70vw;
+}
+
+h1 {
+  font-family: 'Koulen', cursive;
+  font-size: 6.25rem;
+  color: var(--primary-color);
+}
+
+.logo,
+.header-main {
+  display: flex;
+}
+
+.logo {
+  padding-right: 3rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo svg:nth-child(1) {
+  position: relative;
+  left: 1.5rem;
+}
+
+main {
+  font-weight: bold;
+  color: var(--second-color);
+}
+
+a {
+  text-decoration: none;
+  color: var(--third-color);
+}
+
+a:hover {
+  text-decoration: underline;
+  cursor: var(--hover-cursor);
+  color: var(--third-second-color);
+}
+
+main p.info {
+  text-align: justify;
+  margin: 2rem 2.5rem;
+  font-size: 2.5rem;
+  width: 50%;
+}
+
+form {
+  background-color: #a23fff;
+  width: 65vw;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: var(--normal-border-radius);
+  margin: 0 auto;
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+form h2 {
+  font-size: 3rem;
+}
+
+fieldset {
+  border: none;
+}
+
+fieldset label {
+  margin-top: 2rem;
+  margin-bottom: 0.625rem;
+}
+
+fieldset input {
+  width: 29.7vw;
+  padding: 0.625rem;
+  border-radius: var(--normal-border-radius);
+  border: 3px solid var(--primary-second-color);
+}
+
+fieldset input:focus {
+  outline: none;
+  border: 3px solid var(--third-color);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+label,
+input {
+  display: block;
+}
+
+div.column-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.column-form,
+.btn {
+  font-size: 1.5rem;
+}
+
+button.btn {
+  font-family: var(--logo-font-family);
+  padding: 0.625rem 2.5rem;
+  border-radius: var(--normal-border-radius);
+  border: none;
+  background-color: var(--third-color);
+  color: #fff;
+  font-weight: bold;
+  margin-block: 40px;
+  width: 15svw;
+}
+
+button.btn:hover {
+  background-color: var(--third-second-color);
+  cursor: var(--hover-cursor);
+}
+
+.error {
+  font-size: 16px;
+  color: red;
+  position: absolute;
+}
+
+.invalid {
+  border: 3px solid red;
+}
+
+.invalid:focus {
+  border: 3px solid red;
+}
