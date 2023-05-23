@@ -1,5 +1,5 @@
 confirmPassword.addEventListener('change', e => {
-  if (e.target.value !== password.value || e.target.value.length < 8) {
+  if (e.target.value !== password.value) {
     e.target.nextElementSibling.textContent = '*Password did not match'
     e.target.classList = 'invalid'
   } else {
@@ -7,6 +7,16 @@ confirmPassword.addEventListener('change', e => {
     e.target.classList = ''
     password.nextElementSibling.textContent = ''
     password.classList = ''
+  }
+
+  if (e.target.value.length < 8) {
+    e.target.nextElementSibling.textContent = '*Please provide a valid Password'
+    e.target.classList = 'invalid'
+    password.nextElementSibling.textContent = '*Please provide a valid Password'
+    password.classList = 'invalid'
+  } else {
+    e.target.nextElementSibling.textContent = ''
+    e.target.classList = ''
   }
 })
 
