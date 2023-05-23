@@ -2,7 +2,7 @@
 
 <p>it’s a sign-up form for an imaginary service.</p>
 
-<p>Live link: <a>https://nathcarnevalli.github.io/signup-form/index.html</a></p>
+Live link: <a>https://nathcarnevalli.github.io/signup-form/index.html</a>
 
 <h2>Image credits:</h2>
 
