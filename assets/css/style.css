@@ -23,7 +23,7 @@ body {
 
 header {
   background-image: url('../images/player.jpg');
-  background-size: 100% 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   padding-inline: 4rem;
   max-width: 40vw;
@@ -47,7 +47,8 @@ h1 {
 }
 
 .header-main {
-  justify-content: space-between;
+  justify-content: space-evenly;
+  gap: 2rem;
 }
 
 .logo {
@@ -77,6 +78,11 @@ a:hover {
   color: var(--third-second-color);
 }
 
+a:visited,
+a:active {
+  color: #fff;
+}
+
 main p.info {
   text-align: justify;
   margin: 2rem 2.5rem;
@@ -89,7 +95,6 @@ form {
   width: 65vw;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border-radius: var(--normal-border-radius);
-  margin: 0 auto;
   padding: 2.5rem;
   display: flex;
   flex-direction: column;
@@ -178,4 +183,8 @@ footer {
 
 footer p {
   font-family: var(--logo-font-family);
+}
+
+.link-footer:hover {
+  text-decoration: none;
 }
